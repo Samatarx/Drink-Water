@@ -11,7 +11,7 @@ smallCups.forEach((cup, index) => {
 
 function highlightCups(index) {
   // Removes the error for the last cup, when clicked
-  if (index === 7 && smallCups[index].classList.contains("full")) index--;
+  if (index === (smallCups.length - 1) && smallCups[index].classList.contains("full")) index--;
   // if the cup contains full and is the next cup doesnn't contain full it reduces the index
   if (
     smallCups[index].classList.contains("full") &&
@@ -54,6 +54,6 @@ function updateBigCup() {
     remained.style.height = 0;
   } else {
     remained.style.visibility = "visible";
-    liters.innerText = `${2 - (250 * fullCups) / 1000}L`;
+    liters.innerText = `${2 - (100 * fullCups) / 1000}L`;
   }
 }

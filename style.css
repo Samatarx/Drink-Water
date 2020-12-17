@@ -67,7 +67,7 @@ h3 {
   align-items: center;
   justify-content: center;
   /* wraps into rows based on the chosen width */
-  width: 280px;
+  width: 350px;
 }
 
 .remained {
